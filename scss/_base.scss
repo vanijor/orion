@@ -1,0 +1,13 @@
+a{
+	outline: none;
+	img{
+		border: none;
+	}
+}
+.container{
+	>.content{
+		>h2.heading{
+			font: bold 18px $font_main;
+		}
+	}
+}
