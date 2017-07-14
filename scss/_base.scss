@@ -8,8 +8,8 @@ a{
 	@include make-row;
 }
 .container{
-	>.heading{
-		padding-left: 45px;
+	.heading{
+		@include make-md-column(12);
 		>h2{
 			margin: 0 0 30px;
 			font: bold 18px $font_main;
@@ -28,4 +28,8 @@ a{
 			}
 		}
 	}
+}
+.sprite_servicos{
+	background-image: url('../images/sprite-servicos.png');
+	background-repeat: no-repeat;
 }

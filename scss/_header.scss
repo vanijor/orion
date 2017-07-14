@@ -8,7 +8,6 @@ body{
 				@include make-md-column(3);
 				>.logo-container__logo{
 					width: 80%;
-					padding-left: 45px;
 				}
 			}
 			>.search-container{
@@ -32,7 +31,7 @@ body{
 	>#navegacao{
 		background: #CA3034;
 		>.container{
-			>#navegacao__content{
+			#navegacao__content{
 				@include make-md-column(12);
 				.navbar{
 					border-radius: 0;
@@ -42,6 +41,7 @@ body{
 					margin-bottom: 0;
 					.navbar-collapse{
 						border: none;
+						padding-left: 0;
 						>ul.navbar-nav{
 							>li{
 								&.active{
@@ -54,6 +54,7 @@ body{
 									font: bold 15px $font_main;
 									&:hover{
 										background: #882022;
+										transition: background 0.5s linear;
 									}
 								}
 							}
