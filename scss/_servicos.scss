@@ -18,6 +18,7 @@
 				>span{
 					display: inline-block;
 					position: relative;
+					transition: top 0.5s linear;
 					@extend .sprite_servicos;
 					&.config{
 						@include sprite-define(70px, 70px, -5px, -129px);
@@ -36,6 +37,25 @@
 						top: (150px-62px)/2;
 					}
 				}
+				&:hover >span{
+				top: 20px !important;
+				transition: top 0.5s linear;
+				&.config{
+						@include sprite-define(70px, 70px, -5px, -208px);
+						top: (150px-70px)/2;
+					}
+					&.camera{
+						@include sprite-define(70px, 52px, -5px, -67px);
+						top: (150px-52px)/2;
+					}
+					&.image{
+						@include sprite-define(70px, 66px, -5px, -366px);
+						top: (150px-66px)/2;
+					}
+					&.pc{
+						@include sprite-define(70px, 62px, -5px, -513px);
+					}
+			}
 			}
 
 			&:hover{
