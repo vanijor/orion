@@ -2,14 +2,13 @@ body{
 	> header{
 		padding: 25px 0;
 		>.content{
-			@include make-row;
 			>.logo-container{
 				@include make-xs-column(12);
 				@include make-sm-column(4);
 				@include make-md-column(3);
 				>.logo-container__logo{
 					width: 80%;
-					margin-left: 20%;
+					padding-left: 45px;
 				}
 			}
 			>.search-container{
