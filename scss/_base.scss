@@ -9,14 +9,15 @@ a{
 .container{
 	>.content{
 		@include make-row;
-			> h2.heading{
-				@include make-md-column(12);
+			> h2.heading,
+			.widget,h3{
 				margin: 0 0 30px;
 				font: bold 18px $font_main;
 				color: $heading_color;
 				position: relative;
 				line-height: 30px;
 				text-indent: 14px;
+				padding-left: 15px;
 				> span{
 					margin-left: 15px;
 					display: inline-block;
