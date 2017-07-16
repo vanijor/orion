@@ -1,7 +1,10 @@
 body{
 	>footer{
 		background-color: #333;
-		padding: 20px 0 95px;
+		padding: 20px 0 0px;
+		>.container{
+			padding-bottom: 95px;
+		}
 		#footer-sidebar{
 			>.footer-widget{
 				@include make-xs-column(12);
@@ -56,73 +59,81 @@ body{
 			}
 		}
 		>#redes-sociais{
-			ul#redes-sociais__icons{
-				>li{
-					display: inline;
-					float: left;
-					>a.icon{
-						display: block;
-						@extend .sprite_redes_sociais;
-						&.icon--facebook{
-							@include sprite-define(32px, 32px, -5px, -131px);
-
+			background: #555;
+			padding: 10px 0;
+			#redes-sociais__container{
+				@include make-xs-column(12);
+				@include make-sm-column(12);
+				@include make-md-column(12);
+				>ul#redes-sociais__icons{
+					float: right;
+					margin-bottom: 0;
+					>li{
+						display: inline;
+						float: left;
+						margin-right: 5px;
+						>a.icon{
+							display: block;
+							@extend .sprite_redes_sociais;
+							&,
 							&:hover{
-								@include sprite-define(32px, 32px, -5px, -89px);
+								transition: all 0.2s linear;
 							}
-						}
-						&.icon--twitter{
-							@include sprite-define(32px, 32px, -5px, -551px);
-
-							&:hover{
-								@include sprite-define(32px, 32px, -5px, -509px);
+							&.icon--facebook{
+								@include sprite-define(32px, 32px, -5px, -131px);
+								&:hover{
+									@include sprite-define(32px, 32px, -5px, -89px);
+								}
 							}
-						}
-						&.icon--youtube{
-							@include sprite-define(32px, 32px, -5px, -719px);
-
-							&:hover{
-								@include sprite-define(32px, 32px, -5px, -677px);
+							&.icon--twitter{
+								@include sprite-define(32px, 32px, -5px, -551px);
+								&:hover{
+									@include sprite-define(32px, 32px, -5px, -509px);
+								}
 							}
-						}
-						&.icon--gplus{
-							@include sprite-define(32px, 32px, -5px, -299px);
-
-							&:hover{
-								@include sprite-define(32px, 32px, -5px, -257px);
+							&.icon--youtube{
+								@include sprite-define(32px, 32px, -5px, -719px);
+								&:hover{
+									@include sprite-define(32px, 32px, -5px, -677px);
+								}
 							}
-						}
-						&.icon--devianart{
-							@include sprite-define(32px, 32px, -5px, -47px);
-							top: (150px-70px)/2;
-							&:hover{
-								@include sprite-define(32px, 32px, -5px, -5px);
+							&.icon--gplus{
+								@include sprite-define(32px, 32px, -5px, -299px);
+								&:hover{
+									@include sprite-define(32px, 32px, -5px, -257px);
+								}
 							}
-						}
-						&.icon--flickr{
-							@include sprite-define(32px, 32px, -5px, -215px);
-							top: (150px-70px)/2;
-							&:hover{
-								@include sprite-define(32px, 32px, -5px, -173px);
+							&.icon--devianart{
+								@include sprite-define(32px, 32px, -5px, -47px);
+								&:hover{
+									@include sprite-define(32px, 32px, -5px, -5px);
+								}
 							}
-						}
-						&.icon--rss{
-							@include sprite-define(32px, 32px, -5px, -383px);
-							top: (150px-70px)/2;
-							&:hover{
-								@include sprite-define(32px, 32px, -5px, -341px);
+							&.icon--flickr{
+								@include sprite-define(32px, 32px, -5px, -215px);
+								&:hover{
+									@include sprite-define(32px, 32px, -5px, -173px);
+								}
 							}
-						}
-						&.icon--share{
-							@include sprite-define(32px, 32px, -5px, -467px);
-							top: (150px-70px)/2;
-							&:hover{
-								@include sprite-define(32px, 32px, -5px, -425px);
+							&.icon--rss{
+								@include sprite-define(32px, 32px, -5px, -383px);
+								&:hover{
+									@include sprite-define(32px, 32px, -5px, -341px);
+								}
+							}
+							&.icon--share{
+								@include sprite-define(32px, 32px, -5px, -467px);
+								&:hover{
+									@include sprite-define(32px, 32px, -5px, -425px);
+								}
 							}
 						}
 					}
+					:last-child{
+						margin-right: 0;
+					}
 				}
 			}
-			
 		}
 	}
 }
